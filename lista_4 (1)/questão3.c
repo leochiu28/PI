@@ -53,8 +53,10 @@ int main()
         for(int j = 0; j<4; j++){
             if(cidade[i][j] > maior){
                 maior = cidade[i][j];
-                x = i;
-                y = j;
+                
+                x = j; //perceba que a coordenada x é a coluna, pois é o elemento da matriz que anda pela horizontal
+                
+                y = i;// ja a coordena y é a linha, pois é o elemento da mtriz que anda pela vertical
             }
         }
     }
