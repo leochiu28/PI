@@ -36,36 +36,44 @@ void luz(int m, int n, char matriz[m][n]){
                         
                     }
                 }
-                //conferindo diagonal dieita baixo
+                //conferindo diagonal direita baixo
                 if(e+1<m && d+1<n){
-                    if(matriz[e+1][d+1] == '+'){
-                        matriz[e+1][d+1] = '+';
-                    }else{
-                        matriz[e+1][d+1] = 'x';
+                    if(matriz[e+1][d+1] != 'P'){
+                        if(matriz[e+1][d+1] == '+'){
+                            matriz[e+1][d+1] = '+';
+                        }else{
+                            matriz[e+1][d+1] = 'x';
+                        }
                     }
                 }
                 //conferindo diagonal direita cima
                 if(e-1>=0 && d+1<n){
-                    if(matriz[e-1][d+1] == '+'){
-                        matriz[e-1][d+1] = '+';
-                    }else{
-                        matriz[e-1][d+1] = 'x';
+                    if(matriz[e-1][d+1] != 'P'){
+                        if(matriz[e-1][d+1] == '+'){
+                            matriz[e-1][d+1] = '+';
+                        }else{
+                            matriz[e-1][d+1] = 'x';
+                        }
                     }
                 }
                 //conferindo diagonal esquerda baixo
                 if(e+1<m && d-1>= 0){
-                    if(matriz[e+1][d-1] == '+'){
-                        matriz[e+1][d-1] = '+';
-                    }else{
-                        matriz[e+1][d-1] = 'x';
+                    if(matriz[e+1][d-1] != 'P'){
+                        if(matriz[e+1][d-1] == '+'){
+                            matriz[e+1][d-1] = '+';
+                        }else{
+                            matriz[e+1][d-1] = 'x';
+                        }
                     }
                 }
                 //conferindo diagonal esquerda cima
                 if(e-1>=0 && d-1>=0){
-                    if(matriz[e-1][d-1] == '+'){
-                        matriz[e-1][d-1] = '+';
-                    }else{
-                        matriz[e-1][d-1] = 'x';
+                    if(matriz[e-1][d-1] != 'P'){
+                        if(matriz[e-1][d-1] == '+'){
+                            matriz[e-1][d-1] = '+';
+                        }else{
+                            matriz[e-1][d-1] = 'x';
+                        }
                     }
                 }
                 
